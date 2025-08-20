@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Tag que habilita o site ser aberto em diferentes dispositovos-->
+    <meta name="author" content="João" />
+    <meta name="description" content="Site com o proposito de explicar o HTML como um todo" />
+
+    <title>Introdução ao HTML</title>
+
+    <link rel="shortcut icon" href="../arquivos/mercado_livre_integration.png" type="image/x-icon" />
+    <!--Exibe a logo dentro da guia-->
+
+    <!--Atributo rel indica a relação-->
+    <!--Atributo href a referencia, ou seja, a localidade-->
+    <link rel="stylesheet" href="../estilizacoes/style.css" />
+
+    <!--Linkando de forma interna ou incorporado-->
+    <style></style>
+</head>
+
+<body>
+    <!--Linkanko online ou direto na tag-->
+    <h1>Tela principal sobre o Mercado Livre</h1>
+    <!--H1 é o título principal, por boas práticas chamamos somente 1 vez -->
+
+    <header id="Cabecalho">
+        <img id="Logo" src="../arquivos/mercado_livre_integration.png" alt="Logo do Mercado Livre" />
+
+        <nav>
+            <a href="http://www.youtube.com/watch?v=Zi_XLOBDo_Y&list=RDZi_XLOBDo_Y&start_radio=1">Sobre o Mercado
+                Livre</a>
+
+            <a href="index.html">Inicial</a>
+
+            <a href="../arquivos/Cores.pdf" download>Saiba mais</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!--Seção Modelos do Mercado livre-->
+            <h2>Modelos do Mercado Livre</h2>
+
+            <div id="container-flex-produtos">
+                <article class="Card-Produto">
+                    <!--Card do meu produto-->
+                    <img src="../arquivos/Sao Paulo Quadro.jpg" alt="Quadro do São Paulo" height="250" width="250" />
+
+                    <h3>Quadro do São Paulo Futebol Clube</h3>
+                    <span>49,99</span>
+                </article>
+
+                <article class="Card-Produto">
+                    <!--Card do meu produto-->
+                    <img src="../arquivos/Sao Paulo Quadro.jpg" alt="Quadro do São Paulo" height="250" width="250" />
+
+                    <h3>Quadro do São Paulo Futebol Clube</h3>
+                    <span>49,99</span>
+                </article>
+
+                <article class="Card-Produto">
+                    <!--Card do meu produto-->
+                    <img src="../arquivos/Sao Paulo Quadro.jpg" alt="Quadro do São Paulo" height="250" width="250" />
+
+                    <h3>Quadro do São Paulo Futebol Clube</h3>
+                    <span>49,99</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="container-flex-suporte">
+            <h2>Suporte ao cliente</h2>
+            <form>
+                <!--Tag form de Formulario-->
+                <label class="form_campos_label" for="Campo-Nome">Nome completo:</label>
+                <input class="form_campos_input" type="text" id="Campo-Nome" placeholder="Digite seu nome completo" required />
+
+
+                <label class="form_campos_label" for="Campo-Email">E-mail:</label>
+                <input class="form_campos_input" type="email" name="" id="Campo-Email" placeholder="Digite o seu Email" required />
+
+
+                <label class="form_campos_label" for="Campo-Senha">Senha:</label>
+                <input class="form_campos_input" type="password" name="" id="Campo-Senha" placeholder="Digite a sua senha" required />
+
+
+                <label class="form_campos_label" for="Campo-Upload">Upload:</label>
+                <input class="form_campos_input" type="file" name="" id="Campo-Upload" />
+
+                
+
+                <label class="form_campos_label" for="Campo-Estado-Brasil">Estado:</label>
+                <select name="" id="Campo-Estado-Brasil" required>
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <!--Selected para selecionar a opção por padrão-->
+                    <!--disabled desativa a opção para o usuário não selecionar-->
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+
+
+                <label class="form_campos_label" for="Campo-Aceito">Lí e concordo com os termos.</label>
+                <input class="form_campos_input" type="checkbox" name="" id="Campo-Aceito" required />
+
+
+                <label class="form_campos_label" for="">Sexo</label>
+
+                <label class="form_campos_label" for="Campo-Genero-Feminino">Feminimo.</label>
+                <input class="form_campos_input" type="radio" name="Opcao-Genero" id="Campo-Genero-Feminino" value="Feminino." />
+
+                <label class="form_campos_label" for="Campo-Genero-Masculino">Masculino.</label>
+                <input class="form_campos_input" type="radio" name="Opcao-Genero" id="Campo-Genero-Masculino" value="Masculino." />
+
+
+                <label class="form_campos_label" for="Campo-Descricao">Descrição do problema:</label>
+                <textarea name="" id="Campo-Descricao"
+                    required></textarea><!--Atributo Required torna o campo obrigatorio -->
+
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <nav>
+            <a href="https://">Versão 1</a>
+            <a href="https://">Versão 2</a>
+            <a href="https://">Versão 3</a>
+        </nav>
+    </aside>
+
+    <footer>
+        <!--não ordenado-->
+        <ul></ul>
+        <li>
+            Inicial
+            <ul>
+                <li>Sobre nós</li>
+                <li>Planos</li>
+                <li>Promoções</li>
+            </ul>
+        </li>
+
+        <li>css</li>
+
+        <!--Ordenado-->
+        <ol>
+            <li>html</li>
+            <li>css</li>
+        </ol>
+
+        <p>Direitos reservados - 2025.</p>
+    </footer>
+</body>
+
+</html>
