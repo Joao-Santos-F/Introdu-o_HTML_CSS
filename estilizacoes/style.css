@@ -99,3 +99,11 @@ form{
     border-radius: 10px;
     background-color: azure;
 }
+
+.button-campo{
+    height: 35px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
